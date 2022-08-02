@@ -92,8 +92,8 @@ def mars_facts():
     except BaseException:
         return None
 
-    df.columns=['description', 'Mars', 'Earth']
-    df.set_index('description', inplace=True)
+    df.columns=['Description', 'Mars', 'Earth']
+    df.set_index('Description', inplace=True)
 
     # convert df to html format, add bootstrap
     return df.to_html(classes='table table-striped')
@@ -101,5 +101,3 @@ def mars_facts():
 if __name__ == '__main__':
     # if running as a script, print scraped data
     print(scrape_all())
-
-
