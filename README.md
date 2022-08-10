@@ -1,5 +1,9 @@
 # Mission to Mars:
-## Webscraping with Splinter and Beautiful Soup
+## Webscraping with Splinter (Browser and ChromeDriver), MongoDB and Flask
+
+### Overview
+
+Using Browser and Chrome Driver from Splinter, 3 different websites can be scraped for articles, images and a datatable - all pertaining to the planet Mars.  The scraped data is stored in MongoDB.  The Flask app is connected to the mars_app database in Mongo and renders the data as coded by the index.html template.  Clicking the 'Scrape New Data' will retrieve the latest article and featured image from NASA's website.
 
 ### `scraping.py`
 
